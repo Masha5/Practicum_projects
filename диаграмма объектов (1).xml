@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram name="Диаграмма объектов - Планирование доставки" id="object-diagram-fixed">
+    <mxGraphModel dx="1448" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="description-box" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffffcc;strokeColor=#d6b656;align=left;" value="Ситуация: Заведующий бельевой отеля «Белый пион» создаёт план доставки на неделю с 15 по 21 июля 2024. План включает 3 позиции номенклатуры. Статус плана — «черновик»." vertex="1">
+          <mxGeometry height="50" width="700" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="номенклатура_1: Номенклатура" vertex="1">
+          <mxGeometry height="90" width="260" x="80" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom1-attr1" parent="obj-nom1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="наименованиеПозиции = &quot;Комплект постельного белья&quot;" vertex="1">
+          <mxGeometry height="20" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom1-attr2" parent="obj-nom1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="количество = 100" vertex="1">
+          <mxGeometry height="20" width="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="номенклатура_2: Номенклатура" vertex="1">
+          <mxGeometry height="90" width="260" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom2-attr1" parent="obj-nom2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="наименованиеПозиции = &quot;Махровое полотенце&quot;" vertex="1">
+          <mxGeometry height="20" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom2-attr2" parent="obj-nom2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="количество = 200" vertex="1">
+          <mxGeometry height="20" width="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom3" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="номенклатура_3: Номенклатура" vertex="1">
+          <mxGeometry height="90" width="260" x="80" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom3-attr1" parent="obj-nom3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="наименованиеПозиции = &quot;Халат махровый&quot;" vertex="1">
+          <mxGeometry height="20" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-nom3-attr2" parent="obj-nom3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="количество = 50" vertex="1">
+          <mxGeometry height="20" width="260" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-day-plan" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="планНаДень_15: ПланДоставкиОтеляНаДень" vertex="1">
+          <mxGeometry height="90" width="320" x="480" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-day-plan-attr1" parent="obj-day-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="планНаДату = 2024-07-15" vertex="1">
+          <mxGeometry height="20" width="320" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-day-plan-attr2" parent="obj-day-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="списокПозиций = [{номенклатура_1:15}, {номенклатура_2:30}, {номенклатура_3:7}]" vertex="1">
+          <mxGeometry height="20" width="320" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="планОтеля_БелыйПион_июль: ПланОтеляНаПериод" vertex="1">
+          <mxGeometry height="160" width="360" x="480" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan-attr1" parent="obj-period-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="наименованиеОтеля = &quot;Белый пион&quot;" vertex="1">
+          <mxGeometry height="20" width="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan-attr2" parent="obj-period-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаФормирования = 2024-07-14" vertex="1">
+          <mxGeometry height="20" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan-attr3" parent="obj-period-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаНачалаПериода = 2024-07-15" vertex="1">
+          <mxGeometry height="20" width="360" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan-attr4" parent="obj-period-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаОкончанияПериода = 2024-07-21" vertex="1">
+          <mxGeometry height="20" width="360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-period-plan-attr5" parent="obj-period-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="статус = &quot;черновик&quot;" vertex="1">
+          <mxGeometry height="20" width="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-network-plan" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="планСети_июль: ПланДоставкиСети" vertex="1">
+          <mxGeometry height="140" width="360" x="480" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-network-plan-attr1" parent="obj-network-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаФормирования = 2024-07-14" vertex="1">
+          <mxGeometry height="20" width="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-network-plan-attr2" parent="obj-network-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаНачалаПериода = 2024-07-15" vertex="1">
+          <mxGeometry height="20" width="360" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-network-plan-attr3" parent="obj-network-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="датаОкончанияПериода = 2024-07-21" vertex="1">
+          <mxGeometry height="20" width="360" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="obj-network-plan-attr4" parent="obj-network-plan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="статус = &quot;формируется&quot;" vertex="1">
+          <mxGeometry height="20" width="360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="link-day-nom1" edge="1" parent="1" source="obj-day-plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;" target="obj-nom1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="165" />
+              <mxPoint x="340" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link-period-day" edge="1" parent="1" source="obj-period-plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;" target="obj-day-plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link-network-period" edge="1" parent="1" source="obj-network-plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;" target="obj-period-plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

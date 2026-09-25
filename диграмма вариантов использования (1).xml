@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" agent="5.0">
+  <diagram name="Use Case Diagram - Планирование доставки" id="use-case-planning-fixed">
+    <mxGraphModel dx="1086" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="system-boundary" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeWidth=2;fontSize=14;fillColor=#f5f5f5;strokeColor=#333333;" value="«Л-логистика»" vertex="1">
+          <mxGeometry height="500" width="600" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-include-1" edge="1" parent="system-boundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" value="«включить»">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="120" as="sourcePoint" />
+            <mxPoint x="290" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-assoc-5" edge="1" parent="system-boundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=0.291;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;" target="uc-send-correction">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="410" as="sourcePoint" />
+            <mxPoint x="400" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-assoc-3" edge="1" parent="system-boundary" source="actor-manager" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="410" as="sourcePoint" />
+            <mxPoint x="450" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actor-laundry" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Заведующий&lt;br&gt;бельевой" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-manager" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Менеджер по&lt;br&gt;логистике" vertex="1">
+          <mxGeometry height="80" width="40" x="80" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-hotelsystem" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="ПО «О! Отель»" vertex="1">
+          <mxGeometry height="80" width="40" x="950" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-create-week-plan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Создать план доставки&lt;br&gt;на неделю" vertex="1">
+          <mxGeometry height="60" width="180" x="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-edit-week-plan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Изменить план доставки&lt;br&gt;на неделю" vertex="1">
+          <mxGeometry height="60" width="180" x="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-approve-plan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Утвердить общий&lt;br&gt;план доставки" vertex="1">
+          <mxGeometry height="60" width="180" x="650" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-get-plan" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Получить общий&lt;br&gt;план доставки" vertex="1">
+          <mxGeometry height="60" width="180" x="650" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-send-correction" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Отправить план&lt;br&gt;на корректировку" vertex="1">
+          <mxGeometry height="60" width="180" x="650" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-get-occupancy" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Получить данные о&lt;br&gt;загрузке отеля" vertex="1">
+          <mxGeometry height="60" width="180" x="480" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-extend-1" edge="1" parent="1" source="uc-edit-week-plan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" target="uc-create-week-plan" value="«расширить»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-extend-2" edge="1" parent="1" source="uc-send-correction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;fontSize=10;" target="uc-approve-plan" value="«расширить»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-assoc-1" edge="1" parent="1" source="actor-laundry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="uc-create-week-plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-assoc-2" edge="1" parent="1" source="actor-laundry" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" target="uc-edit-week-plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-assoc-ext" edge="1" parent="1" source="system-boundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;" target="actor-hotelsystem">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-assoc-4" edge="1" parent="1" source="actor-manager" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=0.768;entryY=0.876;entryDx=0;entryDy=0;entryPerimeter=0;" target="uc-get-plan">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="500" as="sourcePoint" />
+            <mxPoint x="790" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
